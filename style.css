@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --title-color: hsl(24, 5%, 18%);
+    --text-color: hsl(30, 10%, 34%);
+    --subheadings-color: hsl(14, 45%, 36%);
+    --prep-time-heading-color: hsl(332, 51%, 32%);
+    --prep-time-box-color : hsl(330, 100%, 98%);
+    --background-color: hsl(30, 54%, 90%);
+    --border-color: hsl(30, 18%, 87%);
+    --p-font-size: 16px;
+    --title-size: 40px;
+    --subheadings-size: 28px;
+    --prep-time-heading-size: 20px;
+    --recipe-container-color: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+h2, h3{
+    font-family: "Young Serif", serif;
+}
+
+p, li{
+    font-size: var(--p-font-size);
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+body{
+    width: 100%;
+    background-color: var(--background-color);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 24px;
+    background-color: var(--recipe-container-color);
+    max-width: 736px;
+    
+}
+/* Image Section */
+.image-section{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.image-section img{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    margin: 40px 40px 0 40px;
+}
+
+.recipe-section{
+    padding: 40px;
+}
+
+
+.title{
+    color: var(--title-color);
+    font-size: var(--title-size);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+/* Preparation Time Section */
+.prep-time, .ingredients-section, .instructions-section{
+    margin-block: 32px;
+}
+
+.prep-time{
+    border-radius: 12px;
+    padding: 24px;
+    background-color: var(--prep-time-box-color);
+}
+
+.prep-time-title{
+    color: var(--prep-time-heading-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.prep-time ul,
+.instructions-section ol{
+    margin: 1rem;
+}
+
+.prep-time ul li,
+.instructions-section ol li{
+    margin-block: 8px;
+}
+
+.prep-time ul li::marker{
+    color: var(--prep-time-heading-color);
+}
+
+/* Preparation Time, Ingredients, Instructions Section Spans and titles */
+.prep-time span,
+.ingredients-section span{
+    margin-left: 1rem;
+}
+.prep-time span,
+.ingredients-section span,
+.instructions-section span{
+    font-weight: 500;
+}
+
+.ingredients-section, .instructions-section{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ingredients-section h3,
+.instructions-section h3,
+.nutrition-section h3{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--subheadings-color);
+}
+
+/* Ingredients section */
+.ingredients-section ul{
+    margin-block: 24px;
+    margin-left: 1rem;
+}
+
+.ingredients-section ul li{
+    margin-block: 8px;
+}
+
+.ingredients-section ul li::marker{
+    color: var(--subheadings-color);
+}
+
+/* Instructions section */
+.instructions-section ol li{
+   padding-left: 1rem;
+    
+}
+
+.instructions-section ol li::marker{
+    color: var(--subheadings-color);
+    font-weight: 700;
+}
+
+/* Nutrition section */
+.nutrition-section p{
+    margin-block: 24px;
+}
+
+.nutrition-section table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition-section table tbody tr:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
+    
+}
+
+.nutrition-section table th{
+    color: var(--text-color);
+    font-weight: 300;
+    text-align: left;
+    padding-block: 12px;
+}
+
+.nutrition-section table td{
+    color: var(--subheadings-color);
+    font-weight: 600;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+       
+        border-radius: 0px;
+    }
+
+    .title{
+        font-size: 36px;
+    }
+
+    .image-section img{
+        margin: 0;
+        height: auto;
+        border-radius: 0px;
+    }
+}
+
+
+
+
+
+
