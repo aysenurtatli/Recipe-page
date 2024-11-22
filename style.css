@@ -58,8 +58,7 @@ main{
 }
 
 .image-section img{
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
     border-radius: 12px;
 }
 
