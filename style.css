@@ -94,7 +94,7 @@ main{
 
 .prep-time ul,
 .instructions-section ol{
-    margin: 1rem;
+    margin-left:  1.5rem;
 }
 
 .prep-time ul li,
@@ -132,7 +132,7 @@ main{
 /* Ingredients section */
 .ingredients-section ul{
     margin-block: 24px;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .ingredients-section ul li{
@@ -144,6 +144,9 @@ main{
 }
 
 /* Instructions section */
+.instructions-section ol{
+    margin-top: 24px;
+}
 .instructions-section ol li{
    padding-left: 1rem;
     
